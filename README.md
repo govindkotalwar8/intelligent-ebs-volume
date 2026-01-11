@@ -2,7 +2,7 @@
 
 ### Architecture
 
-**Label:** `screenshots/architecture.png`
+**Label:** `Architecture`
 
 ![Architecture Diagram](screenshots/architecture.png)
 
@@ -147,7 +147,7 @@ After execution, verify the following:
 
 ### Screenshot 1: Step Functions Execution Flow
 
-**Label:** `screenshots/step-functions-execution.png`
+**Label:** `step-functions-execution`
 
 ![Step Functions Execution Flow](screenshots/step-functions-execution.png)
 
@@ -157,7 +157,7 @@ Shows the full execution path with all states completed successfully.
 
 ### Screenshot 2: DynamoDB Audit Log
 
-**Label:** `screenshots/dynamodb-log.png`
+**Label:** `dynamodb-log`
 
 ![DynamoDB Audit Log](screenshots/dynamodb-log.png)
 
@@ -167,7 +167,7 @@ Shows items stored with volume metadata and timestamps.
 
 ### Screenshot 3: SNS Notification
 
-**Label:** `screenshots/sns-notification.png`
+**Label:** `sns-notification`
 
 ![SNS Notification](screenshots/sns-notification.png)
 
@@ -177,7 +177,7 @@ Shows the email or SMS notification received after conversion.
 
 ### Screenshot 4: CloudWatch Logs
 
-**Label:** `screenshots/cloudwatch-logs.png`
+**Label:**  `cloudwatch-logs`
 
 ![CloudWatch Logs](screenshots/cloudwatch-logs.png)
 
@@ -192,14 +192,4 @@ Shows Lambda execution logs with volume processing details.
 * The workflow can be extended with retry, wait, and verification states
 * EventBridge can be used for scheduled execution
 
----
 
-## Future Enhancements
-
-* Add Wait and Verify step using DescribeVolumeModifications
-* Add retry and catch logic for error handling
-* Generate cost-savings reports
-* Extend support to multiple AWS regions
-* Infrastructure as Code using Terraform or CloudFormation
-
-```
