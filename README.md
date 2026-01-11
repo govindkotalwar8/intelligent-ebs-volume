@@ -2,8 +2,6 @@
 
 ### Architecture
 
-**Label:** `Architecture`
-
 ![Architecture Diagram](screenshots/architecture.png)
 
 ## Overview
