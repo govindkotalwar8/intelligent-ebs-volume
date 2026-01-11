@@ -4,6 +4,8 @@
 
 **Label:** `screenshots/architecture.png`
 
+![Architecture Diagram](screenshots/architecture.png)
+
 ## Overview
 
 This project implements an automated, serverless solution on AWS to identify Amazon EBS volumes of type **gp2** and convert them to **gp3** based on explicit tagging.
@@ -112,17 +114,21 @@ The solution follows **least privilege access** principles:
 
 1. Ensure the EBS volume you want to convert has the tag:
 
-   ```
-   Key: AutoConvert
-   Value: true
-   ```
+```
+
+Key: AutoConvert
+Value: true
+
+````
+
 2. Open the Step Functions state machine
 3. Click **Start execution**
 4. Provide input:
 
-   ```json
-   {}
-   ```
+```json
+{}
+````
+
 5. Monitor execution in the Step Functions console
 
 ---
@@ -139,25 +145,42 @@ After execution, verify the following:
 
 ---
 
-
 ### Screenshot 1: Step Functions Execution Flow
 
 **Label:** `screenshots/step-functions-execution.png`
+
+![Step Functions Execution Flow](screenshots/step-functions-execution.png)
+
 Shows the full execution path with all states completed successfully.
+
+---
 
 ### Screenshot 2: DynamoDB Audit Log
 
 **Label:** `screenshots/dynamodb-log.png`
+
+![DynamoDB Audit Log](screenshots/dynamodb-log.png)
+
 Shows items stored with volume metadata and timestamps.
+
+---
 
 ### Screenshot 3: SNS Notification
 
 **Label:** `screenshots/sns-notification.png`
+
+![SNS Notification](screenshots/sns-notification.png)
+
 Shows the email or SMS notification received after conversion.
+
+---
 
 ### Screenshot 4: CloudWatch Logs
 
 **Label:** `screenshots/cloudwatch-logs.png`
+
+![CloudWatch Logs](screenshots/cloudwatch-logs.png)
+
 Shows Lambda execution logs with volume processing details.
 
 ---
@@ -178,3 +201,5 @@ Shows Lambda execution logs with volume processing details.
 * Generate cost-savings reports
 * Extend support to multiple AWS regions
 * Infrastructure as Code using Terraform or CloudFormation
+
+```
