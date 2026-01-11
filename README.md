@@ -147,7 +147,6 @@ After execution, verify the following:
 
 ### Screenshot 1: Step Functions Execution Flow
 
-**Label:** `step-functions-execution`
 
 ![Step Functions Execution Flow](screenshots/step-functions-execution.png)
 
@@ -157,7 +156,6 @@ Shows the full execution path with all states completed successfully.
 
 ### Screenshot 2: DynamoDB Audit Log
 
-**Label:** `dynamodb-log`
 
 ![DynamoDB Audit Log](screenshots/dynamodb-log.png)
 
@@ -167,7 +165,6 @@ Shows items stored with volume metadata and timestamps.
 
 ### Screenshot 3: SNS Notification
 
-**Label:** `sns-notification`
 
 ![SNS Notification](screenshots/sns-notification.png)
 
@@ -176,8 +173,6 @@ Shows the email or SMS notification received after conversion.
 ---
 
 ### Screenshot 4: CloudWatch Logs
-
-**Label:**  `cloudwatch-logs`
 
 ![CloudWatch Logs](screenshots/cloudwatch-logs.png)
 
